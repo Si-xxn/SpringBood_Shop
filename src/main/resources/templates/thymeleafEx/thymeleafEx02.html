@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>thymeleafEx02</title>
+</head>
+<body>
+  <h1>상품 데이터 출력 예제</h1>
+
+  <div>
+    상품명 : <sapn th:text="${itemDto.itemNm}"></sapn>
+  </div>
+  <div>
+    상품상세설명 : <sapn th:text="${itemDto.itemDetail}"></sapn>
+  </div>
+  <div>
+    상품등록일 : <sapn th:text="${itemDto.regTime}"></sapn>
+  </div>
+  <div>
+    상품 가격 : <sapn th:text="${itemDto.price}"></sapn>
+  </div>
+</body>
+</html>
